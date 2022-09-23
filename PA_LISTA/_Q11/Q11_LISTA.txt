@@ -1,0 +1,32 @@
+QUESTAO 11. Suponha que as seguintes declarações tenham sido realizadas:
+float aloha[10], coisas[10][5], *pf, value = 2.2;
+int i=3;
+
+Identifique quais dos seguintes comandos é válido ou inválido:
+
+a) aloha[2] = value;
+b) scanf("%f", &aloha);
+c) aloha = value";
+d) printf("%f", aloha);
+e) coisas[4][4] = aloha[3];
+f) coisas[5] = aloha;
+g) pf = value;
+h) pf = aloha;
+
+R:
+
+a)Válido, visto que o ponteiro do tipo float guardará na sua 3° posição o valor da variável do tipo float value, isto é, *(aloha + 2) = 2.2.
+
+b)Inválido. O endereço de aloha não pode ser do tipo float.
+
+c)Inválido. As aspas após o value farão o programa apresentar erro.
+
+d)Inválido. O endereço de aloha não pode ser apresentado na forma float.
+
+e)Válido, visto que não há problemas em guardar no valor do elemento coisas[4][4] da matriz tipo float "coisas" o elemento aloha[3] do vetor tipo float "aloha".
+
+f)Inválido. Não é possível a linhas coisas[5] guardar o endereço aloha[0] do vetor aloha.
+
+g)Inválido, pois não há como pf guardar o valor de value no seu endereço.
+
+h)Válido. O endereço de aloha[0] pode ser apontado por pf.

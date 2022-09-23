@@ -1,0 +1,23 @@
+QUESTAO 3. Se i e j são variáveis inteiras e p e q ponteiros para int, quais das seguintes expressões de
+atribuição são ilegais?
+a) p = i;
+b) q = &j;
+c) p = &*&i;
+d) i = (*&)j;
+e) i = *&j;
+f) i = *&*&j;
+g) q = *p;
+h) i = (*p)++ + *q;
+
+R: 
+
+Somente a expressão d) i = (*&)j é ILEGAL;
+
+a)Legal. O endereço de p é igual ao valor de i. Sem utilidade;
+b)Legal. O endereço de q igual ao endereço de j. Útil;
+c)Legal. O endereço de p igual ao endereço de i. Útil, mas pode ser simplificado por p = &i;
+d)Ilegal.
+e)Legal. i=j; Sem utilidade.
+f)Legal. i=j; Sem utilidade.
+g)Legal. O endereço de q igual ao conteúdo de p. Sem utilidade.
+h)Legal. i=*p+*q. i igual ao conteúdo de p mais o conteúdo de q. Sem utilidade.

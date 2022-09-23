@@ -1,0 +1,16 @@
+QUESTAO 7. Considerando a declaração int mat[4], *p, x;, quais das seguintes expressões são válidas?
+Justifique.
+a) p = mat + 1;
+b) p = mat++;
+c) p = ++mat;
+d) x = (*mat)++;
+
+R:
+
+a) É válido e p apontará para o próximo endereço de memória após o array mat.
+
+b) É válido e equivale a letra a).
+
+c) Não é válido. O operador ++ não pode ser colocado antes da variável.
+
+d) É válido e terá o valor de mat[0] acrescido de 1 unidade.

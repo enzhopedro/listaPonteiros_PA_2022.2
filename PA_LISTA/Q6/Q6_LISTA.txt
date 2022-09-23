@@ -1,0 +1,10 @@
+QUESTAO 6. Assumindo que pulo[] é um vetor do tipo int, quais das seguintes expressões referenciam o
+valor do terceiro elemento do vetor?
+*(pulo + 2);
+*(pulo + 4);
+pulo + 4;
+pulo + 2;
+
+R:
+
+*(pulo + 2) referencia o valor do 3° elemento do vetor, pois *(pulo+0)-> primeiro; *(pulo+1)->segundo e finalmente *(pulo+2)->terceiro.
